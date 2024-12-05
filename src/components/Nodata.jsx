@@ -3,7 +3,7 @@ import Search from "../assets/svg/searching.svg"
 const NoDataCard = () => {
     return (
         <div className="w-full  p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
-            <h1 className="text-5xl font-bold text-gray-800 mb-4">Welkin</h1>
+            <h1 className="text-5xl font-bold text-gray-800 mb-4">DriveScan</h1>
             <img
                 src={Search}
                 alt="Welkin Logo"

@@ -77,7 +77,7 @@ export function Footer() {
         </div> */}
         <div className=" text-white py-6 text-center">
           <img src={logo} alt="Logo" className="w-12 h-10 rounded-lg mx-auto my-4" />
-          <p>Powered by Welkin Search Engine</p>
+          <p>Powered by DriveScan</p>
           <div className="flex gap-5 justify-center items-center mt-6">
             <a href="#facebook" className="text-white mx-2 hover:text-blue-500"><Facebook/></a>
             <a href="#twitter" className="text-white mx-2 "><X/></a>
@@ -85,7 +85,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
-          © {new Date().getFullYear()} Welkin. All rights reserved.
+          © {new Date().getFullYear()} DriveScan. All rights reserved.
         </div>
       </div>
     </footer>

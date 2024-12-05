@@ -31,7 +31,7 @@ export function Header() {
       <div className="flex items-center gap-2 cursor-pointer">
         <img src={logo} alt="Logo" className="w-10 h-10 rounded-lg" onClick={handleClick}/>
         <nav className="flex gap-6">
-          {["Welkin ",].map(
+          {["DriveScan ",].map(
             (item) => (
               <button key={item} className="text-gray-600 hover:text-gray-900 text-2xl">
                 {item}
