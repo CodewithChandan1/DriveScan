@@ -13,7 +13,7 @@ export function SearchBar({ setQuery, query, handleSearch }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={handleSearch}
+            // onKeyDown={handleSearch}
             placeholder="Search for anime, movies, and public links etc."
             className="w-full px-4 py-2 focus:outline-none"
           />

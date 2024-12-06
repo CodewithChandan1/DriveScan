@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Megaphone, Twitch, X } from "lucide-react";
-import logo from "../assets/logo/welkin.png"
+import logo from "../assets/svg/logosvg.svg"
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 px-8">
@@ -76,7 +76,7 @@ export function Footer() {
           </div>
         </div> */}
         <div className=" text-white py-6 text-center">
-          <img src={logo} alt="Logo" className="w-12 h-10 rounded-lg mx-auto my-4" />
+          <img src={logo} alt="Logo" className="w-20 h-20 rounded-lg mx-auto my-4" />
           <p>Powered by DriveScan</p>
           <div className="flex gap-5 justify-center items-center mt-6">
             <a href="#facebook" className="text-white mx-2 hover:text-blue-500"><Facebook/></a>

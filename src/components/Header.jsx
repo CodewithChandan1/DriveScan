@@ -1,5 +1,5 @@
 import { Bell, Megaphone } from 'lucide-react';
-import logo from "../assets/logo/welkin.png"
+import logo from "../assets/svg/logosvg.svg"
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 export function Header() {
