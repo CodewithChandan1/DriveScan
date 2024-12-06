@@ -6,8 +6,10 @@ import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import NoDataCard from './components/Nodata';
 import CourseCardSkeleton from './components/CardSkeleton';
+
 let debounceTimeout;
 export default function SearchingPage() {
+   
     const [query, setQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -15,7 +17,9 @@ export default function SearchingPage() {
         // if (event.key === 'Enter' && query.trim()) {
         const performSearch = (searchQuery) => {
             if (searchQuery.trim().length >= 3) {
-            const searchUrl = `https://welkin-search-api.vercel.app/search/${query}`;
+                const apiUrl = import.meta.env.VITE_APP_API;
+                console.log("env", apiUrl)
+                const searchUrl = `${apiUrl}/${searchQuery}`;
             setIsLoading(true);
             fetch(searchUrl)
                 .then((response) => response.json())
@@ -41,13 +45,12 @@ export default function SearchingPage() {
 
         if (newQuery.trim() === '') {
             setSearchResults([]); 
-            setIsLoading(false);  
+            setIsLoading(false); 
         } else {
-          
             clearTimeout(debounceTimeout);
             debounceTimeout = setTimeout(() => {
                 performSearch(newQuery);
-            }, 300); 
+            }, 300);
         }
     };
     return (
